@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f33e9c-795b-4a33-8c37-8314f0ab0284" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/style.css" afterPath="$PROJECT_DIR$/client/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/app.routes.js" afterPath="$PROJECT_DIR$/client/js/app.routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/controllers/dashboard.controller.js" afterPath="$PROJECT_DIR$/client/js/controllers/dashboard.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/controllers/login.controller.js" afterPath="$PROJECT_DIR$/client/js/controllers/login.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
     </list>
     <ignored path="asset_management.iws" />
@@ -59,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+            <state relative-caret-position="275">
+              <caret line="56" column="102" selection-start-line="56" selection-start-column="96" selection-end-line="56" selection-end-column="102" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#p#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -71,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/controllers/dashboard.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -154,8 +149,8 @@
         <option value="$PROJECT_DIR$/client/js/controllers/forgotPass.controller.js" />
         <option value="$PROJECT_DIR$/client/js/app.routes.js" />
         <option value="$PROJECT_DIR$/client/css/style.css" />
-        <option value="$PROJECT_DIR$/client/js/controllers/dashboard.controller.js" />
         <option value="$PROJECT_DIR$/client/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/client/js/controllers/dashboard.controller.js" />
       </list>
     </option>
   </component>
@@ -286,12 +281,12 @@
       <workItem from="1502086212779" duration="13869000" />
       <workItem from="1502175419115" duration="1599000" />
       <workItem from="1502180001293" duration="8552000" />
-      <workItem from="1502260015033" duration="7124000" />
+      <workItem from="1502260015033" duration="7645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31144000" />
+    <option name="totallyTimeSpent" value="31665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -637,21 +632,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/controllers/dashboard.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+        <state relative-caret-position="275">
+          <caret line="56" column="102" selection-start-line="56" selection-start-column="96" selection-end-line="56" selection-end-column="102" />
           <folding>
             <element signature="n#style#0;n#label#0;n#p#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/controllers/dashboard.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

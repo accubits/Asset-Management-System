@@ -12,6 +12,7 @@ angular.module('asset_manager').controller('DashboardCtrl', function ($scope, $s
         fourthQuestion:false,
         fifthQuestion:false,
         submitSection:false,
+        accept:false,
         first_Q:'',
         second_Q:'',
         third_Q:'',
@@ -82,6 +83,11 @@ angular.module('asset_manager').controller('DashboardCtrl', function ($scope, $s
     /*api call submitQuestions[start] */
     $scope.submitQuestion = function () {
        /* $scope.model.answerArray.push($scope.model.submit_Q);*/
+        if ($scope.model.accept == false)
+        {
+            return false;
+        }
+
         var data = '&&users_uniqueId=' + $stateParams.userUniqueId + '&&users_questions=' + JSON.stringify($scope.model.answerArray);
 
         var postData = data;
