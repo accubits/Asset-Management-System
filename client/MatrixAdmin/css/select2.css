@@ -470,7 +470,15 @@ disabled look for already selected choices in the results dropdown
 .select2-offscreen { position: absolute; left: -10000px; }
 
 /* Retina-ize icons */
-
+table.response_mgt{
+    width: 100%;
+    border-collapse: collapse;
+}
+table.response_mgt td{
+    border: 1px solid #dddddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
 	.select2-search input, .select2-search-choice-close, .select2-container .select2-choice abbr, .select2-container .select2-choice div b {
 		background-image: url(../img/select2x2.png) !important;
