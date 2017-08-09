@@ -22,24 +22,28 @@ angular.module('asset_manager').controller('LoginCtrl', function ($scope, $state
         $scope.loginModel.sign_form =true;
     };
 
-    // /* Validating Credentials Enterd[Start] */
-    // var ValidateLogin = function () {
-    //     // Validating Email Format With Reg Exp
-    //     var EMAIL_REGEXP = /^([A-Za-z0-9_\-\.]+)@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,3})$/;
-    //     if (!EMAIL_REGEXP.test($scope.loginModel.userName)) {
-    //         showError('Please enter a valid user name', 'error', true);
-    //         return false;
-    //     }
-    //
-    //     if ($scope.loginModel.password === '') {
-    //         showError('Please enter password', 'error', true);
-    //         return false;
-    //     }
-    //     return true;
-    // };
-    // /* Validating Credentials Enterd[End] */
+    /* Validating Credentials Enterd[Start] */
+    var ValidateLogin = function () {
+        // Validating Email Format With Reg Exp
+        var EMAIL_REGEXP = /^([A-Za-z0-9_\-\.]+)@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,3})$/;
+        if (!EMAIL_REGEXP.test($scope.loginModel.email)) {
+            toastr.error('Please enter a valid Email ID', '');
+            return false;
+        }
+
+        if ($scope.loginModel.password === '') {
+            toastr.error('Please enter password', '');
+            return false;
+        }
+        return true;
+    };
+    /* Validating Credentials Enterd[End] */
 
     $scope.doLogin = function () {
+        var validated = ValidateLogin();
+        if (!validated) {
+            return;
+        }
         var data = 'users_email=' + $scope.loginModel.email + '&&users_password=' + $scope.loginModel.password;
 
         var postData = data;
@@ -65,6 +69,10 @@ angular.module('asset_manager').controller('LoginCtrl', function ($scope, $state
     };
     /*api call signUp[start] */
     $scope.doSignup = function () {
+        var validated = ValidateLogin();
+        if (!validated) {
+            return;
+        }
 
         var data = '&&users_name=' + $scope.loginModel.userName + '&&users_email=' + $scope.loginModel.email + '&&users_password=' + $scope.loginModel.password;
 
@@ -77,7 +85,8 @@ angular.module('asset_manager').controller('LoginCtrl', function ($scope, $state
 
         $http(requestObj).success(function (data) {
             console.log(data);
-            $state.go('cloud.dashboard');
+            var userId = data.result.users_uniqueId;
+            $state.go('cloud.dashboard' , { userUniqueId: userId});
             toastr.success('Succesfully registered', '');
         }).error(function (data, err) {
             console.log(data, err);
