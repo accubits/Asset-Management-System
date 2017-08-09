@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f33e9c-795b-4a33-8c37-8314f0ab0284" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/controllers/dashboard.controller.js" afterPath="$PROJECT_DIR$/client/js/controllers/dashboard.controller.js" />
-    </list>
+    <list default="true" id="97f33e9c-795b-4a33-8c37-8314f0ab0284" name="Default" comment="" />
     <ignored path="asset_management.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -69,8 +66,8 @@
       <file leaf-file-name="dashboard.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/controllers/dashboard.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+            <state relative-caret-position="360">
+              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -281,12 +278,12 @@
       <workItem from="1502086212779" duration="13869000" />
       <workItem from="1502175419115" duration="1599000" />
       <workItem from="1502180001293" duration="8552000" />
-      <workItem from="1502260015033" duration="9164000" />
+      <workItem from="1502260015033" duration="9275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33184000" />
+    <option name="totallyTimeSpent" value="33295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -644,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/controllers/dashboard.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+        <state relative-caret-position="360">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
           <folding />
         </state>
       </provider>
