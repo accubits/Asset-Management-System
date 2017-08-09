@@ -57,9 +57,12 @@ angular.module('asset_manager').controller('DashboardCtrl', function ($scope, $s
 
     $scope.next = function () {
 
-        var temp = {}
-        temp[$scope.model.currQes] = $scope.model.first_Q;
-
+       /* var temp = {}
+        temp[$scope.model.currQes] = $scope.model.first_Q;*/
+        var temp = {
+            Que: $scope.model.currQes,
+            Ans: $scope.model.first_Q
+        };
 
         $scope.model.answerArray.push(temp);
 
