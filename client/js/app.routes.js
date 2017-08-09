@@ -29,6 +29,7 @@ angular.module('asset_manager').config(['$stateProvider', '$locationProvider', '
 
         .state('cloud.dashboard', {
             url: '/dashboard',
+            params:{userUniqueId : null},
             templateUrl: 'views/dashboard.html',
            controller: 'DashboardCtrl'
         });

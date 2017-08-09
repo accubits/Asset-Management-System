@@ -203,6 +203,7 @@ ul.radio_style{
     margin: 0;
     padding: 0;
     overflow: auto;
+    min-height: 325px;
 }
 
 ul.radio_style li {
@@ -210,6 +211,8 @@ ul.radio_style li {
     display: block;
     position: relative;
     width: 100%;
+    height: auto;
+   /* padding: 2px 0;*/
 }
 
 ul.radio_style li input[type=radio]{
