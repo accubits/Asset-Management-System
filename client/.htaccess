@@ -1,0 +1,15 @@
+#Options +FollowSymLinks
+
+#Options -Indexes
+
+#RewriteEngine on
+# Check if this looks like a mobile device
+# (You could add another [OR] to the second one and add in what you
+#  had to check, but I believe most mobile devices should send at
+#  least one of these headers)
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteBase /
+
+#RewriteRule ^[^.]*$ /index.html

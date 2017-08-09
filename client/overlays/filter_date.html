@@ -1,0 +1,51 @@
+<div>
+    <div class="modal-demo">
+        <div class="modal-header api_modal">
+            <h3 class="modal-title" id="modal-title">Filter Date<span ng-click="cancel()" class="close">&times;</span>
+            </h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+
+            <div class="col-md-11 col-sm-10 col-xs-11 margin_auto">
+                <div class="col-md-12 margin_auto">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <label class="control-label " for="fromDate">From</label>
+                        <p class="input-group">
+                            <input readonly required class="form-control" type="text"  name="startDate" id="fromDate" uib-datepicker-popup="{{dateFormat}}"
+                                   ng-model="model.startDate" is-open="model.startDatePkrOpened" uib-datepicker-options="dateOptions"
+                                   close-text="Close" show-button-bar="false" show-weeks="false" placeholder="" style="background-color:white;"
+                            />
+                            <span class="input-group-btn">
+                                                    <button class="btn btn-default" ng-click="openDatePicker($event, 'startDatePkrOpened','endDatePkrOpened')"><i class="glyphicon glyphicon-list-alt"></i></button>
+                                                </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <label class="control-label text-center" for="fromDate">To</label>
+                        <p class="input-group">
+                            <input readonly required class="form-control" type="text" name="endtDate" id="ToDate"  uib-datepicker-popup="{{dateFormat}}"
+                                   ng-model="model.endDate" is-open="model.endDatePkrOpened" uib-datepicker-options="dateOptions"
+                                   close-text="Close" show-weeks="false" show-button-bar="false" placeholder="" style="background-color:white;"
+                            />
+                            <span class="input-group-btn">
+                                                    <button class="btn btn-default" ng-click="openDatePicker($event, 'endDatePkrOpened','startDatePkrOpened')"><i class="glyphicon glyphicon-list-alt"></i></button>
+                                                </span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-6 margin_auto padd_bottm">
+            <div class="col-sm-4 col-xs-3 margin_auto text-center">
+                <input type="button" ng-click="confirm()" class="btn btn-primary text-center" value="Filter">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>

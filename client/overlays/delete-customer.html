@@ -1,0 +1,20 @@
+<div class="modal-demo">
+    <div class="modal-header api_modal">
+        <h3 class="modal-title" id="modal-title">DELETE {{model.title}}<span ng-click="cancel()" class="close">&times;</span> </h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+
+        <div class="col-md-11 col-sm-10 col-xs-11 margin_auto api_token_bg">
+            <div class="api_header text-center">Are you sure you want to delete this {{model.itemName}}?</div>
+            <div class="col-md-10 margin_auto">
+                <div class="col-sm-12 col-md-12 col-xs-12 margin_auto">
+                    <div class="col-sm-12 col-xs-12 margin_auto text-center">
+                        <input type="button" ng-click="cancel()" class="btn btn-default text-center" value="CANCEL">
+                        <input type="button" ng-click="delete()" class="btn btn-info text-center" value="DELETE">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

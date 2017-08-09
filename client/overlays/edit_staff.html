@@ -1,0 +1,48 @@
+<div class="modal-demo">
+    <div class="modal-header api_modal">
+        <h3 class="modal-title" id="modal-title">EDIT STAFF<span ng-click="cancel()" class="close">&times;</span> </h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+
+        <div class="col-md-11 col-sm-10 col-xs-11 margin_auto api_token_bg">
+            <div class="api_header text-center">STAFF'S DETAILS</div>
+            <div class="col-md-10 margin_auto">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="Name">Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="Name" ng-model="model.staffName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="phone">Mobile No.</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" ignore-mouse-wheel disable-scroll ng-model="model.staffMobile" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="email">Email ID</label>
+                        <div class="col-sm-8">
+                                <input type="text" class="form-control" ng-model="model.staffEmail" id="email" required>
+                        </div>
+                    </div>
+
+                <!--<display-alert></display-alert>-->
+                <div class="col-sm-6 col-md-6 col-xs-6 margin_auto">
+                    <div class="col-sm-4 col-xs-3 margin_auto text-center">
+                        <input type="submit" ng-click="addStaff()" class="btn btn-primary text-center" value="SAVE">
+                    </div>
+                </div>
+                </form>
+                <div class="col-md-10 progress_bar">
+                    <lx-progress type="circular" color="#055775" ng-show="model.showSmallCircularProgress"></lx-progress>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>

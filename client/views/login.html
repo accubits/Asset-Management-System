@@ -1,0 +1,33 @@
+<div style="height:100%;">
+    <div class="outer">
+        <div class="loginbox">
+            <div class="main">
+                <div class="sign_div">
+                    <div class="log_in" ng-class="{'active' : loginModel.log_in}" ng-model="loginModel.log_in" ng-click="log_in();">Log In</div>
+                    <div class="sign_up" ng-class="{'active' : loginModel.sign_up}" ng-model="loginModel.sign_up" ng-click="sign_up();">Sign Up</div>
+                </div>
+                <form>
+                    <div class="form-group" ng-if="loginModel.sign_form">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" ng-model="loginModel.userName" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input type="text" class="form-control" ng-model="loginModel.email" id="email" placeholder="Email ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" class="form-control" ng-model="loginModel.password" id="pass" placeholder="Password">
+                    </div>
+                    <div class="form-group text-center" ng-if="!loginModel.sign_form"><button type="submit" class="btn btn-default" ng-click="doLogin()">Login</button></div>
+                    <div class="form-group text-center" ng-if="loginModel.sign_form"><button type="submit" class="btn btn-default" ng-click="doSignup()">Sign Up</button></div>
+                    <!--<p class="login_p" ng-if="!loginModel.sign_form"><a class="forgot_passwrd" data-toggle="modal" ng-click="forgotPassowrd();">Forgot Password?</a>-->
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+ </div>
+
+

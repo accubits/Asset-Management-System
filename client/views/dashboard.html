@@ -1,0 +1,217 @@
+
+    <div class="col-md-10 col-sm-10 col-xs-10 margin_auto dashboard">
+        <div class="col-sm-10 margin_auto ques_bor" ng-if="model.firstQuestion">
+            <div class="col-sm-12 ques">
+                1.	Which of the following best describes your current stage of life?
+            </div>
+            <div class="col-sm-12">
+                <ul class="radio_style">
+                    <li>
+                        <input type="radio" id="f-option" name="selector" ng-model="model.first_Q" value="1">
+                        <label for="f-option">Single with few financial burdens. Ready to accumulate wealth for future short term and long-term goals.</label>
+
+                        <div class="check"></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="s-option" name="selector" ng-model="model.first_Q" value="2">
+                        <label for="s-option">A couple without children. Preparing for the future by establishing a home. Expecting to have or already have a high purchase rate of household and consumer items.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="t-option" name="selector" ng-model="model.first_Q" value="3">
+                        <label for="t-option">Young family with a home. You have a mortgage and childcare costs and maintain only small cash balances.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="t-option" name="selector" ng-model="model.first_Q" value="3">
+                        <label for="t-option">Young family with a home. You have a mortgage and childcare costs and maintain only small cash balances.</label>
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+                <p class="text-left">
+                    <a class="text-center nxt_btn" href="#"  ng-click="firstQuestion()">NEXT</a>
+                    <div class="clearfix"></div>
+                </p>
+            </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-10 margin_auto ques_bor" ng-if="model.secondQuestion">
+            <div class="col-sm-12 ques">
+                  2. What would you estimate your Net Worth to be, that is total assets excluding the family home less liabilities?
+            </div>
+            <div class="col-sm-12">
+                <ul class="radio_style">
+                    <li>
+                        <input type="radio" id="f-option" name="selector" ng-model="model.second_Q" value="4">
+                        <label for="f-option">Less than $250,000</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="s-option" name="selector" ng-model="model.second_Q" value="5">
+                        <label for="s-option">Between $250,000 and $500,000</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="t-option" name="selector" ng-model="model.second_Q" value="6">
+                        <label for="t-option">Between $500,000 and $750,000</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="a-option" name="selector" ng-model="model.second_Q" value="6">
+                        <label for="a-option">Between $750,000 and $1,000,000</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="b-option" name="selector" ng-model="model.second_Q" value="6">
+                        <label for="b-option">Greater than $1,000,000</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+                <p class="text-left">
+                    <a class="text-center nxt_btn" href="#"  ng-click="secondQuestion()">NEXT</a>
+                <div class="clearfix"></div>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-10 margin_auto ques_bor" ng-if="model.thirdQuestion">
+            <div class="col-sm-12 ques">
+                3. How long would you invest the majority of your money before you think you would need access to it? (Assuming you already have plans in place to meet short term cashflow and/or emergencies?
+            </div>
+            <div class="col-sm-12">
+                <ul class="radio_style">
+                    <li>
+                        <input type="radio" id="f-option" name="selector" ng-model="model.third_Q" value="7">
+                        <label for="f-option">In 2 years or less.</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="s-option" name="selector" ng-model="model.third_Q" value="8">
+                        <label for="s-option">Within 3
+- 5 years.
+</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="t-option" name="selector" ng-model="model.third_Q" value="9">
+                        <label for="t-option">Within 6 - 10 years.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="a-option" name="selector" ng-model="model.third_Q" value="9">
+                        <label for="a-option">Not for 10 + years.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+                <p class="text-left">
+                    <a class="text-center nxt_btn" href="#"  ng-click="thirdQuestion()">NEXT</a>
+                <div class="clearfix"></div>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-10 margin_auto ques_bor" ng-if="model.fourthQuestion">
+            <div class="col-sm-12 ques">
+               4. In some instances, tax savings can be obtained from investments but this means taking on more risk. Which of the following statements best describes your goal for investing?
+             </div>
+            <div class="col-sm-12">
+                <ul class="radio_style">
+                    <li>
+                        <input type="radio" id="f-option" name="selector" ng-model="model.fourth_Q" value="10">
+                        <label for="f-option">Preferably guaranteed returns, before tax savings.</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="s-option" name="selector" ng-model="model.fourth_Q" value="11">
+                        <label for="s-option">Stable, reliable returns, minimal tax savings.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="t-option" name="selector" ng-model="model.fourth_Q" value="12">
+                        <label for="t-option">Some variability in returns, some tax savings</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="a-option" name="selector" ng-model="model.fourth_Q" value="12">
+                        <label for="a-option">Moderate variability in returns, reasonable tax savings</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="b-option" name="selector" ng-model="model.fourth_Q" value="12">
+                        <label for="b-option">Unstable but potentially higher returns, maximise tax savings.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+                <p class="text-left">
+                    <a class="text-center nxt_btn" href="#" ng-click="fourthQuestion()">NEXT</a>
+                <div class="clearfix"></div>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-10 margin_auto ques_bor" ng-if="model.fifthQuestion">
+            <div class="col-sm-12 ques">
+                5. When considering your investments and making investment decisions, do you think about the impact of possible losses or possible gains?
+            </div>
+            <div class="col-sm-12">
+                <ul class="radio_style">
+                    <li>
+                        <input type="radio" id="f-option" name="selector" ng-model="model.fidth_Q" value="13">
+                        <label for="f-option">I am always concerned about possible losses.</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="s-option" name="selector" ng-model="model.fidth_Q" value="13">
+                        <label for="s-option">I am somewhat concerned about possible losses.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="t-option" name="selector" ng-model="model.fidth_Q" value="13">
+                        <label for="t-option">I usually consider possible gains.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="a-option" name="selector" ng-model="model.fidth_Q" value="13">
+                        <label for="a-option">I always consider possible gains.</label>
+
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+                <p class="text-left">
+                    <a class="text-center nxt_btn" href="#" ng-click="model.fifthQuestion()">SUBMIT</a>
+                <div class="clearfix"></div>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
